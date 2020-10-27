@@ -1,8 +1,9 @@
 library(RSentiment)
 library(rJava)
 
-options(java.parameters = "- Xmx8000m")
+options(java.parameters = "- Xmx8000m") # setting the memory size
 Sys.setenv(JAVA_HOME='') # if meet the "rJava" error, please set you Java path correctly
+
 
 #result classification function
 res.classify <- function(x){
@@ -32,3 +33,4 @@ write.csv(data.biden, "biden.csv")
 
 data.tb <- rbind(data.trump, data.biden) 
 write.csv(data.tb,"all.csv")
+
