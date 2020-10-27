@@ -4,10 +4,10 @@ library(base64enc)
 library(openssl)
 library(httpuv)
 
-api.key <- "OoKWJblfHg5AKLlhnHqwOOMh5"
-api.secret <- "oRPbMSYHO6VcBERzUci5NH8rQbVkk7RDgSAszu8e1mUhpT3Snl"
-acc.token <- "1307139322479554560-AtXS8nLHqNAOqqcJtYkotrv40tLesg"
-acc.serect <- "AyFQmTf0fErd6jjIWS1OJP145bsKH7u9G65XoC2eZrUG5"
+api.key <- "" #input  your key
+api.secret <- "" #input  your secret
+acc.token <- "" #input  your token
+acc.serect <- "" #input  your access secrect
 setup_twitter_oauth(api.key, api.secret, acc.token, acc.serect)
 
 # extract data from Twitter APIS
