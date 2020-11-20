@@ -3,6 +3,7 @@ library("readr")
 library("tm")
 library("stringr")
 library("tidyr")
+library("lubridate")
 
 # load data
 setwd("data collection")
