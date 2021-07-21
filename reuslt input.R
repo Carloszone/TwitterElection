@@ -2,6 +2,11 @@ library(shiny)
 library(ggplot2)
 library(lubridate)
 library(wordcloud)
+library(readr)
+library(dplyr)
+library(tm)
+
+data.tb <- read_csv("all.csv")
 
 # build dashboard by Rshiny
 ui <- fluidPage(
